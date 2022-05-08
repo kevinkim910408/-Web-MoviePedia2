@@ -10,6 +10,8 @@ import Horror from './routes/Horror.js'
 import Fantasy from './routes/Fantasy.js' 
 import History from './routes/History.js' 
 import Adventure from './routes/Adventure.js' 
+import Detail from './routes/Detail.js' 
+import Home from './routes/Home.js' 
 
 // Router
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -19,7 +21,10 @@ function App() {
   return (
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<Crime />}></Route>
+      <Route path="/" element={<Home />}></Route>
+    </Routes>
+    <Routes>
+      <Route path="/movie/:id" element={<Detail />}></Route>
     </Routes>
     <Routes>
       <Route path="/crime" element={<Crime />}></Route>

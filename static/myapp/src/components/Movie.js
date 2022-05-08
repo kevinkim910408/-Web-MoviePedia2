@@ -2,10 +2,13 @@
 import '../components/Movie.scss'
 import PropTypes from "prop-types";
 
-function Movie({title, coverImg}){
+// React Router
+import { Link } from 'react-router-dom';
+
+function Movie({id, title, coverImg}){
     return(
         <div>
-            <img src={coverImg} alt={title}/>
+            <Link to={`/movie/${id}`} className='Header-text'><img src={coverImg} alt={title}/></Link>
         </div>
     );
 }
