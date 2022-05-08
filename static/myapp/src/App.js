@@ -1,10 +1,15 @@
+// CSS
 import './App.scss';
-import Header from './components/Header.js';
 
+// Components
+import Home from './routes/Home.js' 
+
+
+// App
 function App() {
   return (
     <div>
-      <Header />
+      <Home />
     </div>
   );
 }

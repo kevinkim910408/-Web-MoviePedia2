@@ -1,0 +1,11 @@
+.Loader{
+    width: 100%;
+    //'헤더를 제외한 나머지 높이 전체'
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+  
+    color: #fff;
+}
