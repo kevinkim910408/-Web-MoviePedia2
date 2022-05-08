@@ -15,12 +15,15 @@ function Header(){
             {/* Categories  */}
             <div className="Header-menus">
                 <ol className="Header-category">
-                    <a href='/'><ul>High Rating</ul></a>
+                    <a href='/'><ul>High Rating(over 9)</ul></a>
+                    <a href='/'><ul>Crime</ul></a>
                     <a href='/'><ul>Comedy</ul></a>
                     <a href='/'><ul>Action</ul></a>
                     <a href='/'><ul>Romance</ul></a>
                     <a href='/'><ul>Horror</ul></a>
                     <a href='/'><ul>Fantasy</ul></a>
+                    <a href='/'><ul>Drama</ul></a>
+                    <a href='/'><ul>Adventure</ul></a>
                 </ol>
             </div>
 
