@@ -8,7 +8,8 @@ function Home(){
     return(
         <div>
             <Header />
-            <Genre />
+            <Genre 
+            _genre={"drama"}/>
         </div>
     )
 }

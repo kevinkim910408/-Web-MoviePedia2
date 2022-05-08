@@ -21,24 +21,27 @@ import { useEffect, useState } from 'react';
 
 
 
-function Genre(){
+function Genre({_genre}){
     // Loading State
     const [loading, setLoading] = useState(true);
 
      // API로 받아온 movie들 넣어줄 array state - superhero
-     const [crimeMovies, setCrimeMovies] = useState([]);
+     const [Movies, setMovies] = useState([]);
+
+     // Props에서 받은거 꺼내와서 URL에 넣어줄거
+     const genre = _genre
 
      // async wait으로 api 가져오기
-     const getCrimeMovies = async() => {
-     const json = await (await fetch(`https://yts.mx/api/v2/list_movies.json?genre=crime&sort_by=year`)).json();
+     const getMovies = async() => {
+     const json = await (await fetch(`https://yts.mx/api/v2/list_movies.json?genre=${genre}&sort_by=year`)).json();
      // url
-     setCrimeMovies(json.data.movies);
+     setMovies(json.data.movies);
      setLoading(false);
      }
  
      // 한번만 실행시킬 코드 - API 받아오기
      useEffect(()=>{
-         getCrimeMovies();
+         getMovies();
      }, []);
     return(
         <div>
@@ -53,7 +56,7 @@ function Genre(){
                             <div>
                             {/* map을통해 response 들을 꺼내온다.
                             Component props를 통해서 data를 넘겨준다.*/}
-                            {crimeMovies.map((movie)=>
+                            {Movies.map((movie)=>
                                 <div>
                                 <SwiperSlide>
                                 <Movie 
