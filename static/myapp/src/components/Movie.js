@@ -2,6 +2,7 @@
 import '../components/Movie.scss'
 import PropTypes from "prop-types";
 
+
 function Movie({id, title, coverImg}){
     return(
         <div style={{ width: '13rem', backgroundColor: 'black'}}>
