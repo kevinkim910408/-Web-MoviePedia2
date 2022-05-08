@@ -1,0 +1,80 @@
+.Header{
+    position: relative;
+    width: 100%;
+    height: 80px;
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: linear-gradient(
+        to right top,
+        #f9f871,
+        #ffe469,
+        #ffd166,
+        #ffbe66,
+        #ffac69,
+        #ff9d6d,
+        #ff8f73,
+        #ff827b,
+        #fc7486,
+        #f46993,
+        #e861a2,
+        #d65db1
+      );
+    z-index: 10;
+    transition: background-color 300ms;
+
+    color: #faccff;
+    text-shadow: 1px 1px #41227f;
+
+    // header after hover
+    &:hover{
+        background-color: #dcb0ff;
+    }
+
+    // head title 
+    a h3{
+
+        font-size: 30px;
+    }
+
+    // header title after visit
+    a:visited{
+        color: #faccff;
+    }
+
+    // header title padding
+    .Header-title{
+        padding-left: 20px;
+        
+    }
+
+    .Header-menus{
+        font-size: 11px;
+        padding-top: 50px;
+
+        .Header-category {
+            display: flex;
+            flex-direction: row;
+
+            // each menus on the top
+            a:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .Header-login_out{
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        align-content: center;
+        padding-right: 100px;  
+
+        // each log-in/out 
+        a:hover{
+            transform: scale(1.1);
+        }
+    }
+}
+
