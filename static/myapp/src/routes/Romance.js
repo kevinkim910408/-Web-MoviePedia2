@@ -2,16 +2,14 @@
 import Genre from '../components/Genre.js';
 import Header from '../components/Header.js';
 
-
-// Home
-function Home(){
+// Romance
+function Romance(){
     return(
         <div>
             <Header />
-            <Genre 
-            _genre={"drama"}/>
+            <Genre _genre={"romance"}/>
         </div>
     )
 }
 
-export default Home;
+export default Romance;

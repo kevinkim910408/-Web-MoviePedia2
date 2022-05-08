@@ -60,8 +60,7 @@ function Genre({_genre}){
                                 <div>
                                 <SwiperSlide>
                                 <Movie 
-                                    key = {movie.id}
-                                    id={movie.id}
+                                    key={movie.id}
                                     coverImg={movie.medium_cover_image} 
                                     title={movie.title} 
                                 />
