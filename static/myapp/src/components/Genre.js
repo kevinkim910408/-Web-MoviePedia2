@@ -38,6 +38,8 @@ function Genre({_genre}){
      setMovies(json.data.movies);
      setLoading(false);
      }
+
+     console.log(Movies);
  
      // 한번만 실행시킬 코드 - API 받아오기
      useEffect(()=>{
@@ -64,6 +66,7 @@ function Genre({_genre}){
                                     id={movie.id}
                                     coverImg={movie.medium_cover_image} 
                                     title={movie.title} 
+                                    summary={movie.summary}
                                 />
                                 </SwiperSlide>
                                 </div>
