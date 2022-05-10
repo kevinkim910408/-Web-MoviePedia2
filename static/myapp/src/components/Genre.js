@@ -49,7 +49,7 @@ function Genre({_genre}){
         <div>
             {loading ? <Loading />:
                     <div className='cardGroups'>
-                        <Swiper
+                        <Swiper style={{width:'400px', height:'600px'}}
                             effect={"cards"}
                             grabCursor={true}
                             modules={[EffectCards]}

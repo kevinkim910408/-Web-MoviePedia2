@@ -12,13 +12,19 @@ function Movie({id, title, coverImg, summary}){
             {
                 summary=="" ? 
                 <Link to={`/movie/${id}`} >
-                    <img src='https://dbdzm869oupei.cloudfront.net/img/vinylrugs/preview/18797.png' alt={title}/>
+                    <div style={{
+                        width:'400px', 
+                        height:'600px', 
+                        backgroundImage:'url(https://dbdzm869oupei.cloudfront.net/img/vinylrugs/preview/18797.png)',
+                        backgroundSize:"cover"}} 
+                        >
+                           <div style={{width:'100%', textAlign:'center'}}><h1>Information Not Provided Yet</h1></div>
+                        </div>
                 </Link> :
                 <Link to={`/movie/${id}`}>
-                    <img src={coverImg} alt={title}/>
+                    <img style={{width:'400px', height:'600px'}} src={coverImg} alt={title}/>
                 </Link>
             }
-            
         </div>
     );
 }
