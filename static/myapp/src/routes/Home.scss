@@ -1,0 +1,41 @@
+.flexRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .imgs{
+        margin: 50px 20px 0 0;
+        width: 200px;
+        height: 800px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 50%;
+        box-shadow: 1px 1px 1px 1px #d3d3d3;
+    }
+
+    .imgs:nth-child(1){
+        background-position: 30%;
+        background-image: url("https://wallpaper.dog/large/10825241.jpg");
+    }
+    .imgs:nth-child(2){
+        background-image: url("https://free4kwallpapers.com/uploads/originals/2017/01/19/2017-beauty-and-the-beast-4k-wallpaper.jpg");
+    }
+    .imgs:nth-child(3){
+        background-image: url("https://wallpaper.dog/large/20493504.jpg");
+    }
+    .imgs:nth-child(4){
+        background-image: url("https://c4.wallpaperflare.com/wallpaper/168/856/47/captain-america-chris-evans-captain-america-the-first-avenger-wallpaper-preview.jpg");
+    }
+    .imgs:nth-child(5){
+        background-image: url("https://www.ivanyolo.com/wp-content/uploads/2019/09/best-4k-blu-ray-movies.jpg");
+    }
+    .imgs:nth-child(6){
+        background-position: 40%;
+        background-image: url("https://wallpaperaccess.com/full/37943.jpg");
+    }
+
+    .imgs:hover{
+        transform: translateX(-1%) translateY(-1%) ;
+    }
+}
