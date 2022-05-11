@@ -12,9 +12,12 @@ import History from './routes/History.js'
 import Adventure from './routes/Adventure.js' 
 import Detail from './routes/Detail.js' 
 import Home from './routes/Home.js' 
+import Login from './routes/Login.js' 
 
 // Router
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+import "bootstrap/dist/css/bootstrap.min.css";
 
 // App
 function App() {
@@ -49,6 +52,12 @@ function App() {
     </Routes>
     <Routes>
       <Route path="/adventure" element={<Adventure />}></Route>
+    </Routes>
+    <Routes>
+      <Route path="/login" element={<Login />}></Route>
+    </Routes>
+    <Routes>
+      <Route path="/signin" element={<Adventure />}></Route>
     </Routes>
   </BrowserRouter>
 

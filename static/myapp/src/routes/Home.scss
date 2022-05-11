@@ -11,7 +11,9 @@
         background-size: cover;
         background-position: center;
         border-radius: 50%;
-        box-shadow: 1px 1px 1px 1px #d3d3d3;
+        opacity: 70%;
+        transition: opacity 300ms;
+        box-shadow: 5px 4px 50px 6px rgba(0,0,0,0.66);
     }
 
     .imgs:nth-child(1){
@@ -37,5 +39,6 @@
 
     .imgs:hover{
         transform: translateX(-1%) translateY(-1%) ;
+        opacity: 100%;
     }
 }

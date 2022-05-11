@@ -22,7 +22,7 @@ function Movie({id, title, coverImg, summary}){
                         </div>
                 </Link> :
                 <Link to={`/movie/${id}`}>
-                    <img style={{width:'400px', height:'600px'}} src={coverImg} alt={title}/>
+                    <img style={{width:'400px', height:'600px' }} src={coverImg} alt={title}/>
                 </Link>
             }
         </div>

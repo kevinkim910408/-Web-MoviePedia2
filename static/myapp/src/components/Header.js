@@ -30,8 +30,8 @@ function Header(){
             {/* Sign In/ Log In */}
             <div className="Header-menus">
                 <ol className="Header-login_out">
-                    <a href='/' className='Header-text'><ul>Log In</ul></a>
-                    <a href='/' className='Header-text'><ul>Sign In</ul></a>
+                    <Link to={`/login`} className='Header-text'><ul>Log In</ul></Link>
+                    <Link to={`/adventure`} className='Header-text'><ul>Sign In</ul></Link>
                     <a href='/' className='Header-text'><ul>About Me</ul></a>
                 </ol>
             </div>
